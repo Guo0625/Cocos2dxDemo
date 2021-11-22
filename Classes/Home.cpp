@@ -6,6 +6,8 @@
 #include "AD.h"
 #include "Pay.h"
 #include "TJ.h"
+#include "Social.h"
+#include "Base.h"
 
 USING_NS_CC;
 using namespace cocos2d::ui;
@@ -20,6 +22,9 @@ bool Home::init()
     auto panel = home->getChildByName("ListView");
     Button* backBtn = static_cast<Button*>(home->getChildByName("Back")); 
     backBtn->addClickEventListener(CC_CALLBACK_1(Home::buttonCallBack,this));
+    // base Button
+    Button* baseBtn = static_cast<Button*>(panel->getChildByName("Button_1")); 
+    baseBtn->addClickEventListener(CC_CALLBACK_1(Home::baseButtonCallBack,this));
     // ad Button
     Button* adBtn = static_cast<Button*>(panel->getChildByName("Button_2")); 
     adBtn->addClickEventListener(CC_CALLBACK_1(Home::adButtonCallBack,this));
@@ -29,8 +34,19 @@ bool Home::init()
     // tj Button
     Button* tjBtn = static_cast<Button*>(panel->getChildByName("Button_4")); 
     tjBtn->addClickEventListener(CC_CALLBACK_1(Home::tjButtonCallBack,this));
+    // social Button
+    Button* socialBtn = static_cast<Button*>(panel->getChildByName("Button_5")); 
+    socialBtn->addClickEventListener(CC_CALLBACK_1(Home::socialButtonCallBack,this));
 
     return true;
+}
+
+void Home::baseButtonCallBack(Ref* pSender) {
+    // open base Layer
+    cocos2d::log("open base Layer");
+    auto base = Base::create();
+	Director::getInstance()->getRunningScene()->addChild(base);
+	this->removeFromParent();
 }
 
 void Home::adButtonCallBack(Ref* pSender) {
@@ -49,9 +65,16 @@ void Home::payButtonCallBack(Ref* pSender) {
 }
 
 void Home::tjButtonCallBack(Ref* pSender) {
-    cocos2d::log("open ty Layer");
+    cocos2d::log("open tj Layer");
     auto tj = TJ::create();
 	Director::getInstance()->getRunningScene()->addChild(tj);
+	this->removeFromParent();
+}
+
+void Home::socialButtonCallBack(Ref* pSender) {
+    cocos2d::log("open social Layer");
+    auto social = Social::create();
+	Director::getInstance()->getRunningScene()->addChild(social);
 	this->removeFromParent();
 }
 

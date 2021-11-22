@@ -34,6 +34,9 @@ public:
     virtual void OrderPayWithType(int payId, int price, int payType,std::string userData)=0;
     virtual void OpenMarket(std::string packageName)=0;
     virtual void OpenAppraise()=0;
+    virtual std::string GetPayList()=0;
+    virtual void ClearPayList(int payId)=0;
+    virtual void ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext) = 0;
 };
 
 VIGAME_END

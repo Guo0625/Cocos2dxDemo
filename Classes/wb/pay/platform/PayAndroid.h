@@ -34,6 +34,9 @@ public:
     void OrderPayWithType(int payId, int price, int payType,std::string userData) override;
     void OpenMarket(std::string packageName) override;
     void OpenAppraise() override;
+    std::string GetPayList() override;
+    void ClearPayList(int payId) override;
+    void ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext) override;
 };
 
 VIGAME_END

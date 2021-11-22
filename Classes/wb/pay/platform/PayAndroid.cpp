@@ -371,4 +371,69 @@ void PayAndroid::OpenAppraise()
 #endif
 }
 
+std::string PayAndroid::GetPayList() 
+{ 
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	cocos2d::JniMethodInfo methodInfo;
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/cocos2dxbridge/Cocos2dxWbActivity", "GetPayList", "()[I");
+	if (isExist)
+	{
+		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
+		methodInfo.env->ExceptionClear();
+		return str;
+	}
+	else
+	{
+		cocos2d::log("Pay jni get GetPayList function error");
+		return nullptr;
+	}
+#endif
+}
+
+void PayAndroid::ClearPayList(int payId) 
+{
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	cocos2d::JniMethodInfo methodInfo;
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/cocos2dxbridge/Cocos2dxWbActivity", "ClearPayList", "(I)V");
+	if (isExist)
+	{
+		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, payId); //call Java method
+		methodInfo.env->ExceptionClear();
+	}
+	else
+	{
+		cocos2d::log("Pay jni get ClearPayList function error");
+	}
+#endif
+}
+
+void PayAndroid::ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext)
+{
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	cocos2d::JniMethodInfo methodInfo;
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "reportUserGameInfo", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;)V");
+	if (isExist)
+	{
+		jstring str1 = methodInfo.env->NewStringUTF(roldId.c_str());						//create jstring
+		jstring str2 = methodInfo.env->NewStringUTF(roleName.c_str());						//create jstring
+		jstring str3 = methodInfo.env->NewStringUTF(realmId.c_str());						//create jstring
+		jstring str4 = methodInfo.env->NewStringUTF(realmName.c_str());						//create jstring
+		jstring str5 = methodInfo.env->NewStringUTF(chapter.c_str());						//create jstring
+		jstring str6 = methodInfo.env->NewStringUTF(ext.c_str());						//create jstring
+		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, str1, str2, roleLevel, str3, str4, str5, combatValue, pointValue, str6); //call Java method
+		methodInfo.env->DeleteLocalRef(str1);
+		methodInfo.env->DeleteLocalRef(str2);
+		methodInfo.env->DeleteLocalRef(str3);
+		methodInfo.env->DeleteLocalRef(str4);
+		methodInfo.env->DeleteLocalRef(str5);
+		methodInfo.env->DeleteLocalRef(str6);
+		methodInfo.env->ExceptionClear();
+	}
+	else
+	{
+		cocos2d::log("Pay jni get reportUserGameInfo function error");
+	}
+#endif
+}
+
 VIGAME_END

@@ -1,5 +1,6 @@
 #include "cocos2d.h"
 #include "PayManager.h"
+#include "../utils/Utils.h"
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "platform/PayAndroid.h"
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -166,7 +167,7 @@ void PayManager::PayCheckCallBack(std::string params)
 	{
 		return;
 	}
-	std::vector<std::string> tokens = this->Split(params, "#");
+	std::vector<std::string> tokens = vigame::Utils::getInstance()->Split(params, "#");
 	int payId = atoi(tokens[0].c_str());
 	std::string resultStr = tokens[1];
 	std::string userData = tokens[2];
@@ -185,6 +186,47 @@ void PayManager::PayCheckCallBack(std::string params)
 	}
 	this->func(status, payId, userData);
 	this->func = nullptr;
+	this->ClearPayList(payId);
+}
+
+/**
+ * @brief 获取补单列表
+ * 
+ * @return std::string 
+ */
+std::vector<std::string> PayManager::GetPayList()
+{
+	std::string ret = mInterface->GetPayList();
+	std::vector<std::string> tokens = vigame::Utils::getInstance()->Split(ret, "#");
+	return tokens;
+}
+
+/**
+ * @brief 根据id删除补单
+ * 
+ * @param payId 
+ */
+void PayManager::ClearPayList(int payId)
+{
+	mInterface->ClearPayList(payId);
+}
+
+/**
+ * @brief 上报用户游戏信息
+ * 
+ * @param roldId 
+ * @param roleName 
+ * @param roleLevel 
+ * @param realmId 
+ * @param realmName 
+ * @param chapter 
+ * @param combatValue 
+ * @param pointValue 
+ * @param ext 
+ */
+void PayManager::ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext)
+{
+	this->mInterface->ReportUserGameInfo(roldId, roleName, roleLevel, realmId, realmName, chapter, combatValue, pointValue, ext);
 }
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
@@ -198,6 +240,5 @@ extern "C"
 }
 
 #endif
-
 
 VIGAME_END

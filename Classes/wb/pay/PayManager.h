@@ -81,6 +81,36 @@ public:
 	void OpenMarket(std::string packageName);
 	void OpenAppraise();
 	void PayCheckCallBack(std::string params);
+    void setPayCallBack(std::function<void(PayStatus, int, std::string)> func);
+
+    /**
+     * @brief 获取补单列表
+     * 
+     * @return std::vector<std::string> 
+     */
+    std::vector<std::string> GetPayList();
+
+    /**
+     * @brief 根据id删除补单
+     * 
+     * @param payId 
+     */
+    void ClearPayList(int payId);
+
+    /** 上报用户游戏信息
+     * @brief 
+     * 
+     * @param roldId 
+     * @param roleName 
+     * @param roleLevel 
+     * @param realmId 
+     * @param realmName 
+     * @param chapter 
+     * @param combatValue 
+     * @param pointValue 
+     * @param ext 
+     */
+    void ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext);
 private:
     PayBase* mInterface;
 	std::function<void(PayStatus, int, std::string)> func;

@@ -31,5 +31,7 @@ int PayiOS::GetButtonType(int id) { return 0; }
 int PayiOS::GetMarketType() { return 0; }
 void PayiOS::OpenMarket(std::string packageName) {}
 void PayiOS::OpenAppraise() {}
-
+std::string PayiOS::GetPayList() { return ""; }
+void PayiOS::ClearPayList(int payId) {}
+void PayiOS::ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext) {}
 VIGAME_END

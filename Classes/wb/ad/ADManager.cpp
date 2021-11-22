@@ -1,5 +1,6 @@
 #include "cocos2d.h"
 #include "ADManager.h"
+#include "../utils/Utils.h"
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 #include "platform/ADAndroid.h"
 #elif (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
@@ -110,7 +111,7 @@ void ADManager::VideoCallBack(std::string params)
 {
 	cocos2d::log("VideoCallBack params = %s", params.c_str());
 	// "positionName", "result", "ecpm", "sid", "agentName", "openType", "tradeId"
-	std::vector<std::string> tokens = this->Split(params, "#");
+	std::vector<std::string> tokens = vigame::Utils::getInstance()->Split(params, "#");
 	if (callbacks.size() == 0) return;
 	if (callbacks.find(tokens[0]) == callbacks.end()) return;
 	if (callbacks[tokens[0]].size() == 0) return;

@@ -25,5 +25,7 @@ int PayPc::GetButtonType(int id) { return 0; }
 int PayPc::GetMarketType() { return 0; }
 void PayPc::OpenMarket(std::string packageName) {}
 void PayPc::OpenAppraise() {}
-
+std::string PayPc::GetPayList() { return ""; }
+void PayPc::ClearPayList(int payId) {}
+void PayPc::ReportUserGameInfo(std::string roldId, std::string roleName, int roleLevel, std::string realmId, std::string realmName, std::string chapter, int combatValue, int pointValue, std::string ext) {}
 VIGAME_END

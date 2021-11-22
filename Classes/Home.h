@@ -9,10 +9,12 @@ public:
     // implement the "static create()" method manually
     CREATE_FUNC(Home);
     virtual bool init();
+    void baseButtonCallBack(Ref* pSender);
     void adButtonCallBack(Ref* pSender);
     void buttonCallBack(Ref* pSender);
     void payButtonCallBack(Ref* pSender);
     void tjButtonCallBack(Ref* pSender);
+    void socialButtonCallBack(Ref* pSender);
 };
 
 #endif // __HOME_SCENE_H__
