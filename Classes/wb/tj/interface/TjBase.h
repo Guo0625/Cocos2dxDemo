@@ -28,6 +28,12 @@ public:
     virtual void TJPayAndBuy(double money, std::string item, int number, double price, int source) = 0;
     virtual void onPageStart(std::string sid) = 0;
     virtual void onPageEnd(std::string sid) = 0;
+
+    virtual void ProfileSignIn(std::string provider, std::string puid) = 0;
+    virtual void ProfileSignOff() = 0;
+    virtual void Use(std::string item, int number, double price) = 0;
+    virtual void Bonus(double coin, int trigger) = 0;
+    virtual void Bonus(std::string item, int number, double price, int trigger) = 0;
 };
 
 VIGAME_END

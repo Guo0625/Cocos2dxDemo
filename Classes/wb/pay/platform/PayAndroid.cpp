@@ -22,7 +22,7 @@ void PayAndroid::OrderPay(int payId)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPay", "(I)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPay", "(I)V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, payId); //call Java method
@@ -39,7 +39,7 @@ void PayAndroid::OrderPay(int payId, int price)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPay", "(II)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPay", "(II)V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, payId, price); //call Java method
@@ -56,7 +56,7 @@ void PayAndroid::OrderPay(int payId, std::string userData)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPay", "(ILjava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPay", "(ILjava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(userData.c_str());						//create jstring
@@ -75,7 +75,7 @@ void PayAndroid::OrderPay(int payId, int price, std::string userData)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPay", "(IILjava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPay", "(IILjava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(userData.c_str());						//create jstring
@@ -94,7 +94,7 @@ void PayAndroid::OrderPay(int payId, int price, int type, std::string userData)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPay", "(IIILjava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPay", "(IIILjava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(userData.c_str());						//create jstring
@@ -113,7 +113,7 @@ int PayAndroid::GetGiftCtrlFlagUse(int giftId)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getGiftCtrlFlagUse", "(I)I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getGiftCtrlFlagUse", "(I)I");
 	if (isExist)
 	{
 		int ret = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID, giftId); //call Java method
@@ -132,7 +132,7 @@ bool PayAndroid::IsSupportExit()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "isSupportExit", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "isSupportExit", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -151,7 +151,7 @@ void PayAndroid::OpenExitGame()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openExitGame", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openExitGame", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -168,7 +168,7 @@ bool PayAndroid::IsMoreGameBtn()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "isMoreGameBtn", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "isMoreGameBtn", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -187,7 +187,7 @@ void PayAndroid::OpenMoreGame()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openMoreGame", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openMoreGame", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -204,7 +204,7 @@ bool PayAndroid::IsPayReady()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "isPayReady", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "isPayReady", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -223,7 +223,7 @@ std::string PayAndroid::GetDefaultFeeInfo()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getDefaultFeeInfo", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getDefaultFeeInfo", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -242,7 +242,7 @@ int PayAndroid::GetDefaultPayType()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getDefaultPayType", "()I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getDefaultPayType", "()I");
 	if (isExist)
 	{
 		int ret = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -261,7 +261,7 @@ bool PayAndroid::IsBillingPointExist(std::string bp)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "isBillingPointExist", "(Ljava/lang/String;)Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "isBillingPointExist", "(Ljava/lang/String;)Z");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(bp.c_str());						//create jstring
@@ -282,7 +282,7 @@ int PayAndroid::GetButtonType(int id)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getButtonType", "(I)I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getButtonType", "(I)I");
 	if (isExist)
 	{
 		int ret = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID, id); //call Java method
@@ -301,7 +301,7 @@ int PayAndroid::GetMarketType()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getMarketType", "()I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getMarketType", "()I");
 	if (isExist)
 	{
 		int ret =  methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -320,7 +320,7 @@ void PayAndroid::OrderPayWithType(int payId, int price, int payType,std::string 
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "orderPayWithType", "(IIILjava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "orderPayWithType", "(IIILjava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(userData.c_str());						//create jstring
@@ -339,7 +339,7 @@ void PayAndroid::OpenMarket(std::string packageName)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openMarket", "(Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openMarket", "(Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(packageName.c_str());						//create jstring
@@ -358,7 +358,7 @@ void PayAndroid::OpenAppraise()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openAppraise", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openAppraise", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -411,7 +411,7 @@ void PayAndroid::ReportUserGameInfo(std::string roldId, std::string roleName, in
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "reportUserGameInfo", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "reportUserGameInfo", "(Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;IILjava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str1 = methodInfo.env->NewStringUTF(roldId.c_str());						//create jstring

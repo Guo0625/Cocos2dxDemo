@@ -63,4 +63,30 @@ void TjPc::onPageEnd(std::string sid)
 {
 }
 
+void TjPc::ProfileSignIn(std::string provider, std::string puid)
+{
+
+}
+
+void TjPc::ProfileSignOff()
+{
+
+}
+
+void TjPc::Use(std::string item, int number, double price)
+{
+
+}
+
+void TjPc::Bonus(double coin, int trigger)
+{
+
+}
+
+void TjPc::Bonus(std::string item, int number, double price, int trigger)
+{
+
+}
+
+
 VIGAME_END

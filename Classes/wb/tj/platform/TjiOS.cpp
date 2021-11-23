@@ -62,5 +62,29 @@ void TjiOS::onPageStart(std::string sid)
 void TjiOS::onPageEnd(std::string sid)
 {
 }
+void TjiOS::ProfileSignIn(std::string provider, std::string puid)
+{
+
+}
+
+void TjiOS::ProfileSignOff()
+{
+
+}
+
+void TjiOS::Use(std::string item, int number, double price)
+{
+
+}
+
+void TjiOS::Bonus(double coin, int trigger)
+{
+
+}
+
+void TjiOS::Bonus(std::string item, int number, double price, int trigger)
+{
+
+}
 
 VIGAME_END

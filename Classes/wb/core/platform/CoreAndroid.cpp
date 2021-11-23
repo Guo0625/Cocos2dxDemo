@@ -19,7 +19,7 @@ void CoreAndroid::UseCDKey(std::string dhm)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "useCDKey", "(Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "useCDKey", "(Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(dhm.c_str());							//create jstring
@@ -38,7 +38,7 @@ bool CoreAndroid::CDKeyIsSupport()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "CDKeyIsSupport", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "CDKeyIsSupport", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -57,7 +57,7 @@ void CoreAndroid::OpenActivityPage()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openActivityPage", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openActivityPage", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -74,7 +74,7 @@ void CoreAndroid::OpenActivityNotice()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openActivityNotice", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openActivityNotice", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -91,7 +91,7 @@ void CoreAndroid::OpenRank()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openRank", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openRank", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -108,7 +108,7 @@ void CoreAndroid::OpenUserAgreement()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openUserAgreement", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openUserAgreement", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -125,7 +125,7 @@ void CoreAndroid::OpenPrivacyPolicy()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openPrivacyPolicy", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openPrivacyPolicy", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -142,7 +142,7 @@ void CoreAndroid::OpenUserAgreementByWeb()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openUserAgreementByWeb", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openUserAgreementByWeb", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -159,7 +159,7 @@ void CoreAndroid::OpenUserAgreementNoCompany()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openUserAgreementNoCompany", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openUserAgreementNoCompany", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -176,7 +176,7 @@ void CoreAndroid::OpenFeedback()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openFeedback", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openFeedback", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -193,7 +193,7 @@ void CoreAndroid::OpenMarketPlus(std::string url, std::string param)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openMarketPlus", "(Ljava/lang/String;Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openMarketPlus", "(Ljava/lang/String;Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str1 = methodInfo.env->NewStringUTF(url.c_str());
@@ -214,7 +214,7 @@ void CoreAndroid::SumbitRankData(std::string userId, int level, int score, int u
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "sumbitRankData", "(Ljava/lang/String;IIII)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "sumbitRankData", "(Ljava/lang/String;IIII)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(userId.c_str());
@@ -233,7 +233,7 @@ void CoreAndroid::SetGameName(std::string gameName)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "setGameName", "(Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "setGameName", "(Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(gameName.c_str());
@@ -252,7 +252,7 @@ std::string CoreAndroid::GetAppName()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAppName", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAppName", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -271,7 +271,7 @@ std::string CoreAndroid::GetChannel()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getChannel", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getChannel", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -290,7 +290,7 @@ std::string CoreAndroid::GetPrjid()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getPrjid", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getPrjid", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -309,7 +309,7 @@ std::string CoreAndroid::GetAppid()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAppid", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAppid", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -328,7 +328,7 @@ std::string CoreAndroid::GetLsn()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getLsn", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getLsn", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -347,7 +347,7 @@ std::string CoreAndroid::GetUuid()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getUuid", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getUuid", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -366,7 +366,7 @@ std::string CoreAndroid::GetImsi()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getImsi", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getImsi", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -385,7 +385,7 @@ std::string CoreAndroid::GetImei()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getImei", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getImei", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -404,7 +404,7 @@ std::string CoreAndroid::GetOaid()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getOaid", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getOaid", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -423,7 +423,7 @@ std::string CoreAndroid::GetAndroidId()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAndroidId", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAndroidId", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -442,7 +442,7 @@ std::string CoreAndroid::GetAppkey()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAppKey", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAppKey", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)(methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID))); //call Java method
@@ -461,7 +461,7 @@ int CoreAndroid::GetNetState()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getNetState", "()I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getNetState", "()I");
 	if (isExist)
 	{
 		jint ret = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -480,7 +480,7 @@ std::string CoreAndroid::GetSignature()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getSignature", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getSignature", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -499,7 +499,7 @@ std::string CoreAndroid::GetPackageName()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getPkgName", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getPkgName", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -518,7 +518,7 @@ std::string CoreAndroid::GetVerName()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getVerName", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getVerName", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -538,7 +538,7 @@ bool CoreAndroid::GetAuditSwitch()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAuditSwitch", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAuditSwitch", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -557,7 +557,7 @@ std::string CoreAndroid::GetCustomSwitch(std::string key)
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getCustomSwitch", "(Ljava/lang/String;)Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getCustomSwitch", "(Ljava/lang/String;)Ljava/lang/String;");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(key.c_str());
@@ -578,7 +578,7 @@ bool CoreAndroid::GetIsHarmonyOs()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getIsHarmonyOs", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getIsHarmonyOs", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -597,7 +597,7 @@ void CoreAndroid::OpenUrl(std::string url)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openUrl", "(Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openUrl", "(Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(url.c_str());
@@ -616,7 +616,7 @@ void CoreAndroid::OpenInnerUrl(std::string url)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openInnerUrl", "(Ljava/lang/String;IIII)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openInnerUrl", "(Ljava/lang/String;IIII)V");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(url.c_str());
@@ -635,7 +635,7 @@ void CoreAndroid::OpenDialogWeb(std::string url, std::string title)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openDialogWeb", "(Ljava/lang/String;Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openDialogWeb", "(Ljava/lang/String;Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str1 = methodInfo.env->NewStringUTF(url.c_str());
@@ -656,7 +656,7 @@ void CoreAndroid::OpenActivityWeb(std::string url, std::string title)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openActivityWeb", "(Ljava/lang/String;Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openActivityWeb", "(Ljava/lang/String;Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str1 = methodInfo.env->NewStringUTF(url.c_str());
@@ -683,7 +683,7 @@ void CoreAndroid::CloseAccount()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "closeAccount", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "closeAccount", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -700,7 +700,7 @@ void CoreAndroid::InitGameConfig(int version)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "initGameConfig", "(I)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "initGameConfig", "(I)V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, version); //call Java method
@@ -717,7 +717,7 @@ std::string CoreAndroid::GetConfigValue(std::string key)
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getConfigValue", "(Ljava/lang/String;)Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getConfigValue", "(Ljava/lang/String;)Ljava/lang/String;");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(key.c_str());
@@ -746,7 +746,7 @@ void CoreAndroid::WordFilterUpdate()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "wordFilterUpdate", "()V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "wordFilterUpdate", "()V");
 	if (isExist)
 	{
 		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -764,7 +764,7 @@ std::string CoreAndroid::WordFilter(std::string sentence)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "wordFilter", "(Ljava/lang/String;)Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "wordFilter", "(Ljava/lang/String;)Ljava/lang/String;");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(sentence.c_str());
@@ -786,7 +786,7 @@ void CoreAndroid::SetSceneName(std::string name)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openActivityWeb", "(Ljava/lang/String;)V");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openActivityWeb", "(Ljava/lang/String;)V");
 	if (isExist)
 	{
 		jstring str1 = methodInfo.env->NewStringUTF(name.c_str());
@@ -806,7 +806,7 @@ bool CoreAndroid::IsRedeemEnable()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "redeemEnable", "()Z");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "redeemEnable", "()Z");
 	if (isExist)
 	{
 		bool ret = methodInfo.env->CallStaticBooleanMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -853,7 +853,7 @@ std::string CoreAndroid::GetBuyChannel()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getBuyChannel", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getBuyChannel", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -873,7 +873,7 @@ std::string CoreAndroid::GetBuyUserId()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getBuyUserId", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getBuyUserId", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -904,7 +904,7 @@ std::string CoreAndroid::GetAssetsFileData(std::string fileName)
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getAssetsFileData", "(Ljava/lang/String;)Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getAssetsFileData", "(Ljava/lang/String;)Ljava/lang/String;");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(fileName.c_str());
@@ -929,7 +929,7 @@ std::string CoreAndroid::GetUpdateInfo()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getUpdateInfo", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getUpdateInfo", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -953,7 +953,7 @@ std::string CoreAndroid::GetConfigVigameValue(std::string key)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getConfigVigameValue", "(Ljava/lang/String;)Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getConfigVigameValue", "(Ljava/lang/String;)Ljava/lang/String;");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(key.c_str());
@@ -990,7 +990,7 @@ std::string CoreAndroid::GetOpenGLVersion()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getOpenGLVersion", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getOpenGLVersion", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -1014,7 +1014,7 @@ int CoreAndroid::OpenDeepLink(std::string openUrl)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openDeepLink", "(Ljava/lang/String;)I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openDeepLink", "(Ljava/lang/String;)I");
 	if (isExist)
 	{
 		jstring str = methodInfo.env->NewStringUTF(openUrl.c_str());
@@ -1039,7 +1039,7 @@ int CoreAndroid::OpenZfbDp()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "openZfbDp", "()I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "openZfbDp", "()I");
 	if (isExist)
 	{
 		jint ret = methodInfo.env->CallStaticIntMethod(methodInfo.classID, methodInfo.methodID); //call Java method
@@ -1062,7 +1062,7 @@ std::string CoreAndroid::GetDnid()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getDnid", "()Ljava/lang/String;");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getDnid", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string ret = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method
@@ -1081,7 +1081,7 @@ unsigned long CoreAndroid::GetElapsedRealtime()
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/game/AndroidBridge", "getElapsedRealtime", "()J");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "getElapsedRealtime", "()J");
 	if (isExist)
 	{
 		unsigned long ret = methodInfo.env->CallStaticLongMethod(methodInfo.classID, methodInfo.methodID); //call Java method

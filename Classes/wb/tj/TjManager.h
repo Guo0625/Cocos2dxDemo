@@ -29,6 +29,11 @@ public:
     void TJPayAndBuy(double money, std::string item, int number, double price, int source);
     void onPageStart(std::string sid);
     void onPageEnd(std::string sid);
+    void TJProfileSignIn(std::string provider, std::string puid);
+    void TJProfileSignOff();
+    void TJUse(std::string item, int number, double price);
+    void TJBonus(double coin, int trigger);
+    void TJBonus(std::string item, int number, double price, int trigger);
 
 private:
     TjBase* mInterface;

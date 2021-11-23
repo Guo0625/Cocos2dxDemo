@@ -6,6 +6,7 @@
 #include "../interface/TjBase.h"
 #define VIGAME_BEGIN                     namespace vigame {
 #define VIGAME_END                       }
+#define ANDROIDBRIDGE_CLASS "com/vimedia/game/AndroidBridge" 
 
 VIGAME_BEGIN
 
@@ -27,6 +28,11 @@ public:
     void TJPayAndBuy(double money, std::string item, int number, double price, int source) override;
     void onPageStart(std::string sid) override;
     void onPageEnd(std::string sid) override;
+    void ProfileSignIn(std::string provider, std::string puid) override;
+    void ProfileSignOff() override;
+    void Use(std::string item, int number, double price) override;
+    void Bonus(double coin, int trigger) override;
+    void Bonus(std::string item, int number, double price, int trigger) override;
 };
 
 VIGAME_END
