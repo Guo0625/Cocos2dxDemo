@@ -30,6 +30,7 @@ public:
     void onPageEnd(std::string sid) override;
     void ProfileSignIn(std::string provider, std::string puid) override;
     void ProfileSignOff() override;
+    void Buy(std::string item, int number, double price) override;
     void Use(std::string item, int number, double price) override;
     void Bonus(double coin, int trigger) override;
     void Bonus(std::string item, int number, double price, int trigger) override;

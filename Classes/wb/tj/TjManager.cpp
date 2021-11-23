@@ -177,6 +177,18 @@ void TjManager::TJProfileSignOff()
 }
 
 /**
+ * @brief 购买
+ * 
+ * @param item 
+ * @param number 
+ * @param price 
+ */
+void TjManager::TJBuy(std::string item, int number, double price)
+{
+	this->mInterface->Buy(item, number, price);
+}
+
+/**
  * @brief 消耗
  * 
  * @param item 

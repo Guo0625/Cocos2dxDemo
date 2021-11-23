@@ -331,6 +331,25 @@ void TjAndroid::ProfileSignOff()
 #endif
 }
 
+void TjAndroid::Buy(std::string item, int number, double price)
+{
+#if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
+	cocos2d::JniMethodInfo methodInfo;
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, ANDROIDBRIDGE_CLASS, "TJBuy", "(Ljava/lang/String;ID)V");
+	if (isExist)
+	{
+		jstring str = methodInfo.env->NewStringUTF(item.c_str());							//create jstring
+		methodInfo.env->CallStaticVoidMethod(methodInfo.classID, methodInfo.methodID, str, number, price); //call Java method
+		methodInfo.env->DeleteLocalRef(str);
+		methodInfo.env->ExceptionClear();
+	}
+	else
+	{
+		cocos2d::log("Tj jni get TJBuy function error");
+	}
+#endif
+}
+
 void TjAndroid::Use(std::string item, int number, double price)
 {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)

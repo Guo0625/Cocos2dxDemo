@@ -81,7 +81,6 @@ public:
 	void OpenMarket(std::string packageName);
 	void OpenAppraise();
 	void PayCheckCallBack(std::string params);
-    void setPayCallBack(std::function<void(PayStatus, int, std::string)> func);
 
     /**
      * @brief 获取补单列表

@@ -2,6 +2,7 @@
 #include "Utils.h"
 
 VIGAME_BEGIN
+
 Utils *Utils::getInstance()
 {
 	static std::unique_ptr<Utils> s_instance;

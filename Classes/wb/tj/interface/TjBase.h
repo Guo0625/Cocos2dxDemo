@@ -31,6 +31,7 @@ public:
 
     virtual void ProfileSignIn(std::string provider, std::string puid) = 0;
     virtual void ProfileSignOff() = 0;
+    virtual void Buy(std::string item, int number, double price) = 0;
     virtual void Use(std::string item, int number, double price) = 0;
     virtual void Bonus(double coin, int trigger) = 0;
     virtual void Bonus(std::string item, int number, double price, int trigger) = 0;

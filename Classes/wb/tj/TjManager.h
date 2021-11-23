@@ -31,6 +31,7 @@ public:
     void onPageEnd(std::string sid);
     void TJProfileSignIn(std::string provider, std::string puid);
     void TJProfileSignOff();
+    void TJBuy(std::string item, int number, double price);
     void TJUse(std::string item, int number, double price);
     void TJBonus(double coin, int trigger);
     void TJBonus(std::string item, int number, double price, int trigger);

@@ -73,6 +73,11 @@ void TjPc::ProfileSignOff()
 
 }
 
+void TjPc::Buy(std::string item, int number, double price)
+{
+
+}
+
 void TjPc::Use(std::string item, int number, double price)
 {
 

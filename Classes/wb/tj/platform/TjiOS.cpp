@@ -72,6 +72,11 @@ void TjiOS::ProfileSignOff()
 
 }
 
+void TjiOS::Buy(std::string item, int number, double price)
+{
+
+}
+
 void TjiOS::Use(std::string item, int number, double price)
 {
 
