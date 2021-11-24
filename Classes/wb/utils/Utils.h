@@ -1,10 +1,7 @@
 #ifndef __Utils_H__
 #define __Utils_H__
 
-#include <string>
-
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
+#include "macros.h"
 
 VIGAME_BEGIN
 

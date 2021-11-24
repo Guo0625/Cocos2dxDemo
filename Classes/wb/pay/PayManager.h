@@ -7,9 +7,6 @@
 #include <functional>
 #include "interface/PayBase.h"
 
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
-
 VIGAME_BEGIN
 
 enum PayTypeDef
@@ -87,7 +84,7 @@ public:
      * 
      * @return std::vector<std::string> 
      */
-    std::vector<std::string> GetPayList();
+    std::map<std::string , std::string> GetPayList();
 
     /**
      * @brief 根据id删除补单

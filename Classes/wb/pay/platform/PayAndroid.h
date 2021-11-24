@@ -2,11 +2,7 @@
 #ifndef __PAY_ADDROID_H__
 #define __PAY_ADDROID_H__
 
-#include <string>
 #include "../interface/PayBase.h"
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
-#define ANDROIDBRIDGE_CLASS "com/vimedia/game/AndroidBridge" 
 
 VIGAME_BEGIN
 

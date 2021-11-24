@@ -2,10 +2,7 @@
 #ifndef __PAY_IOS_H__
 #define __PAY_IOS_H__
 
-#include <string>
-#include "../interface/PayBase.h"
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
+#include "../interface/PayBase.h"                
 
 VIGAME_BEGIN
 

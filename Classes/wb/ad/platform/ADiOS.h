@@ -2,10 +2,7 @@
 #ifndef __AD_IOS_H__
 #define __AD_IOS_H__
 
-#include <string>
-#include "../interface/ADBase.h"
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
+#include "../interface/ADBase.h"             
 
 VIGAME_BEGIN
 

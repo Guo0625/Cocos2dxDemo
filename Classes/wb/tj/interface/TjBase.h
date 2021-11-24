@@ -3,12 +3,7 @@
 #define __TJ_BASE_H__
 
 #include <unordered_map>
-#include <string>
-
-#define VIGAME_BEGIN \
-    namespace vigame \
-    {
-#define VIGAME_END }
+#include "../../utils/macros.h"
 
 VIGAME_BEGIN
 

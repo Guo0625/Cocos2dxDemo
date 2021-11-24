@@ -7,9 +7,6 @@
 #include <functional>
 #include "interface/ADBase.h"
 
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
-
 VIGAME_BEGIN
 
 class ADManager

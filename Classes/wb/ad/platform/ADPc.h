@@ -2,10 +2,7 @@
 #ifndef __AD_PC_H__
 #define __AD_PC_H__
 
-#include <string>
 #include "../interface/ADBase.h"
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
 
 VIGAME_BEGIN
 

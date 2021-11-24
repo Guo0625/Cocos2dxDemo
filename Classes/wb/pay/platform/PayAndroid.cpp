@@ -375,7 +375,7 @@ std::string PayAndroid::GetPayList()
 { 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_ANDROID)
 	cocos2d::JniMethodInfo methodInfo;
-	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/cocos2dxbridge/Cocos2dxWbActivity", "GetPayList", "()[I");
+	bool isExist = cocos2d::JniHelper::getStaticMethodInfo(methodInfo, "com/vimedia/cocos2dxbridge/Cocos2dxWbActivity", "GetPayList", "()Ljava/lang/String;");
 	if (isExist)
 	{
 		std::string str = cocos2d::JniHelper::jstring2string((jstring)methodInfo.env->CallStaticObjectMethod(methodInfo.classID, methodInfo.methodID)); //call Java method

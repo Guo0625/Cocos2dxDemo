@@ -192,13 +192,19 @@ void PayManager::PayCheckCallBack(std::string params)
 /**
  * @brief 获取补单列表
  * 
- * @return std::string 
+ * @return std::map<std::string payId, std::string userData> 
  */
-std::vector<std::string> PayManager::GetPayList()
+std::map<std::string, std::string> PayManager::GetPayList()
 {
-	std::string ret = mInterface->GetPayList();
-	std::vector<std::string> tokens = vigame::Utils::getInstance()->Split(ret, "#");
-	return tokens;
+	std::map<std::string, std::string> payMap;
+	std::string ret = this->mInterface->GetPayList();
+	std::vector<std::string> tokens = vigame::Utils::getInstance()->Split(ret, "$");
+	for (auto &item: tokens)
+	{
+		std::vector<std::string> items = vigame::Utils::getInstance()->Split(item, "#");
+		payMap.insert(std::pair<std::string, std::string>(items[0], items[2]));
+	}
+	return payMap;
 }
 
 /**

@@ -7,9 +7,6 @@
 #include <functional>
 #include "interface/CoreBase.h"
 
-#define VIGAME_BEGIN                     namespace vigame {
-#define VIGAME_END                       }
-
 VIGAME_BEGIN
 
 
