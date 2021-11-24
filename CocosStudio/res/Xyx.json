@@ -1,0 +1,433 @@
+{
+  "ID": "a86d1ff8-4257-4fb6-ab4f-b064f22fa148",
+  "Version": "2.1.0.0",
+  "Type": "Layer",
+  "Name": "Xyx",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 2713,
+        "PrePosition": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "PreSize": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Children": [
+          {
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "Tag": 2714,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "ActionTag": -1744913037,
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {},
+            "CColor": {},
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "FrameEvent": "",
+            "Name": "Panel",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "Scale9Enable": true,
+            "Scale9Width": 64,
+            "Scale9Height": 64,
+            "TouchEnable": true,
+            "Tag": 2715,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.1,
+              "Y": 0.0563
+            },
+            "LeftMargin": 24.0001,
+            "RightMargin": 551.9999,
+            "TopMargin": 47.0,
+            "BottomMargin": 1025.0,
+            "ActionTag": 1597671235,
+            "Position": {
+              "X": 56.0001,
+              "Y": 1057.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "FrameEvent": "",
+            "Name": "Back",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "ItemMargin": 45,
+            "DirectionType": "Vertical",
+            "HorizontalType": "Align_HorizontalCenter",
+            "VerticalType": 0,
+            "ScrollDirectionType": 0,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 150
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "Tag": 2717,
+            "PrePosition": {
+              "X": 0.5031,
+              "Y": 0.7192
+            },
+            "PreSize": {
+              "X": 0.7813,
+              "Y": 0.3345
+            },
+            "LeftMargin": 72.0,
+            "RightMargin": 68.0,
+            "TopMargin": 129.0,
+            "BottomMargin": 627.0,
+            "Children": [
+              {
+                "FontSize": 24,
+                "ButtonText": "登录",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Disable.png"
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Press.png"
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Normal.png"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 26,
+                "Scale9Height": 16,
+                "TouchEnable": true,
+                "CallBackType": "Touch",
+                "Tag": 2719,
+                "PrePosition": {
+                  "X": 0.2,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0528
+                },
+                "RightMargin": 300.0,
+                "ActionTag": -1212497747,
+                "Position": {
+                  "X": 250.0,
+                  "Y": 350.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 200.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Button_1",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "获取用户信息",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Disable.png"
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Press.png"
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Normal.png"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 26,
+                "Scale9Height": 16,
+                "TouchEnable": true,
+                "CallBackType": "Touch",
+                "Tag": 2721,
+                "PrePosition": {
+                  "X": 0.8,
+                  "Y": 0.5
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0528
+                },
+                "LeftMargin": 300.0,
+                "ActionTag": -1297816778,
+                "Position": {
+                  "X": 250.0,
+                  "Y": 245.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 1,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 200.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Button_2",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "分享：链接",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Disable.png"
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Press.png"
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Normal.png"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 26,
+                "Scale9Height": 16,
+                "TouchEnable": true,
+                "CallBackType": "Touch",
+                "Tag": 2854,
+                "PrePosition": {
+                  "X": 0.52,
+                  "Y": 0.6184
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0528
+                },
+                "LeftMargin": 160.0,
+                "RightMargin": 140.0,
+                "TopMargin": 115.0,
+                "BottomMargin": 205.0,
+                "ActionTag": 1825676546,
+                "Position": {
+                  "X": 250.0,
+                  "Y": 140.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 2,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 200.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Button_3",
+                "ctype": "ButtonObjectData"
+              },
+              {
+                "FontSize": 24,
+                "ButtonText": "分享：图片",
+                "TextColor": {},
+                "DisabledFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Disable.png"
+                },
+                "PressedFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Press.png"
+                },
+                "NormalFileData": {
+                  "Type": "Normal",
+                  "Path": "res/Button_Normal.png"
+                },
+                "Scale9Enable": true,
+                "Scale9OriginX": 10,
+                "Scale9OriginY": 10,
+                "Scale9Width": 26,
+                "Scale9Height": 16,
+                "TouchEnable": true,
+                "CallBackType": "Touch",
+                "Tag": 2855,
+                "PrePosition": {
+                  "X": 0.52,
+                  "Y": 0.3421
+                },
+                "PreSize": {
+                  "X": 0.3125,
+                  "Y": 0.0528
+                },
+                "LeftMargin": 160.0,
+                "RightMargin": 140.0,
+                "TopMargin": 220.0,
+                "BottomMargin": 100.0,
+                "ActionTag": -342813007,
+                "Position": {
+                  "X": 250.0,
+                  "Y": 35.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 3,
+                "AnchorPoint": {
+                  "ScaleX": 0.5,
+                  "ScaleY": 0.5
+                },
+                "CColor": {},
+                "Size": {
+                  "X": 200.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Button_4",
+                "ctype": "ButtonObjectData"
+              }
+            ],
+            "ActionTag": 1136967572,
+            "Position": {
+              "X": 322.0,
+              "Y": 817.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 500.0,
+              "Y": 380.0
+            },
+            "FrameEvent": "",
+            "Name": "ListView",
+            "ctype": "ListViewObjectData"
+          }
+        ],
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "AnchorPoint": {},
+        "CColor": {},
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "FrameEvent": "",
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  }
+}

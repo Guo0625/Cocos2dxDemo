@@ -1,0 +1,29 @@
+<Solution>
+  <PropertyGroup Name="CocosDemo" Version="2.1.0.0" Type="CocosStudio" />
+  <SolutionFolder>
+    <Group ctype="ResourceGroup">
+      <RootFolder Name=".">
+        <Project Name="Home.csd" />
+        <Folder Name="res">
+          <Image Name="btn_back.png" />
+          <Image Name="Button_Disable.png" />
+          <Image Name="Button_Normal.png" />
+          <Image Name="Button_Press.png" />
+        </Folder>
+        <Project Name="Base.csd" />
+        <Project Name="Ad.csd" />
+        <Project Name="Pay.csd" />
+        <Project Name="Ext.csd" />
+        <Project Name="Social.csd" />
+        <Project Name="TJ.csd" />
+        <Project Name="RedPacket.csd" />
+        <Project Name="Xyx.csd" />
+        <Project Name="NetCash.csd" />
+        <Project Name="Integral.csd" />
+        <Project Name="Invite.csd" />
+        <Project Name="InputDlg.csd" />
+        <Project Name="ExitDlg.csd" />
+      </RootFolder>
+    </Group>
+  </SolutionFolder>
+</Solution>

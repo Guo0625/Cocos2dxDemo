@@ -1,0 +1,1934 @@
+{
+  "ID": "a86d1ff8-4257-4fb6-ab4f-b064f22fa148",
+  "Version": "2.1.0.0",
+  "Type": "Layer",
+  "Name": "Pay",
+  "Content": {
+    "Content": {
+      "Animation": {
+        "Duration": 0,
+        "Speed": 1.0,
+        "Timelines": [],
+        "ctype": "TimelineActionData"
+      },
+      "AnimationList": [],
+      "ObjectData": {
+        "Tag": 2713,
+        "PrePosition": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "PreSize": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Children": [
+          {
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 200
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "Tag": 2714,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 1.0,
+              "Y": 1.0
+            },
+            "ActionTag": -1744913037,
+            "Position": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {},
+            "CColor": {},
+            "Size": {
+              "X": 640.0,
+              "Y": 1136.0
+            },
+            "FrameEvent": "",
+            "Name": "Panel",
+            "ctype": "PanelObjectData"
+          },
+          {
+            "FontSize": 14,
+            "ButtonText": "",
+            "TextColor": {
+              "R": 65,
+              "G": 65,
+              "B": 70
+            },
+            "DisabledFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "PressedFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "NormalFileData": {
+              "Type": "Normal",
+              "Path": "res/btn_back.png"
+            },
+            "Scale9Enable": true,
+            "Scale9Width": 64,
+            "Scale9Height": 64,
+            "TouchEnable": true,
+            "Tag": 2715,
+            "PrePosition": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "PreSize": {
+              "X": 0.1,
+              "Y": 0.0563
+            },
+            "LeftMargin": 24.0001,
+            "RightMargin": 551.9999,
+            "TopMargin": 47.0,
+            "BottomMargin": 1025.0,
+            "ActionTag": 1597671235,
+            "Position": {
+              "X": 56.0001,
+              "Y": 1057.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 64.0,
+              "Y": 64.0
+            },
+            "FrameEvent": "",
+            "Name": "Back",
+            "ctype": "ButtonObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "支付相关",
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "Tag": 2716,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.9296
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 272.0,
+            "RightMargin": 272.0,
+            "TopMargin": 68.0,
+            "BottomMargin": 1044.0,
+            "ActionTag": -2070779667,
+            "Position": {
+              "X": 320.0,
+              "Y": 1056.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "Size": {
+              "X": 144.0,
+              "Y": 36.0
+            },
+            "FrameEvent": "",
+            "Name": "Title",
+            "ctype": "TextObjectData"
+          },
+          {
+            "ItemMargin": 45,
+            "DirectionType": "Vertical",
+            "VerticalType": 0,
+            "ScrollDirectionType": 0,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 150
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "TouchEnable": true,
+            "Tag": 2717,
+            "PrePosition": {
+              "X": 0.5031,
+              "Y": 0.7192
+            },
+            "PreSize": {
+              "X": 0.7813,
+              "Y": 0.3345
+            },
+            "LeftMargin": 72.0,
+            "RightMargin": 68.0,
+            "TopMargin": 129.0,
+            "BottomMargin": 627.0,
+            "Children": [
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "TouchEnable": true,
+                "Tag": 2718,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "BottomMargin": 340.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2719,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "查询当前计费类型",
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2720,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.6,
+                          "Y": 0.4
+                        },
+                        "LeftMargin": 40.0,
+                        "RightMargin": 40.0,
+                        "TopMargin": 18.0,
+                        "BottomMargin": 18.0,
+                        "ActionTag": 469178582,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 192.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -1212497747,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2721,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "查询计费点是否存在",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2722,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "ActionTag": -1469554833,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -1297816778,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -1864044189,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_1",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2723,
+                "PrePosition": {
+                  "X": 0.02,
+                  "Y": 0.825
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "LeftMargin": 10.0,
+                "RightMargin": -10.0,
+                "TopMargin": 10.0,
+                "BottomMargin": 330.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2724,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "获取礼包控制开关",
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2725,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.6,
+                          "Y": 0.4
+                        },
+                        "LeftMargin": 40.0,
+                        "RightMargin": 40.0,
+                        "TopMargin": 18.0,
+                        "BottomMargin": 18.0,
+                        "ActionTag": 1123295221,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 192.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -910785387,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2726,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "获取按钮类型",
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2727,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.6,
+                          "Y": 0.4
+                        },
+                        "LeftMargin": 40.0,
+                        "RightMargin": 40.0,
+                        "TopMargin": 18.0,
+                        "BottomMargin": 18.0,
+                        "ActionTag": -1698325629,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 144.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 1748887117,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 120603860,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 215.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 1,
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2728,
+                "PrePosition": {
+                  "X": 0.02,
+                  "Y": 0.6375
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "LeftMargin": 10.0,
+                "RightMargin": -10.0,
+                "TopMargin": 85.0,
+                "BottomMargin": 255.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2729,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "默认支付",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2730,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.1667
+                        },
+                        "TopMargin": -5.0,
+                        "BottomMargin": -5.0,
+                        "ActionTag": 651667576,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 359199313,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2731,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "支付宝支付（仅安卓）",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2732,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.6,
+                          "Y": 1.0
+                        },
+                        "LeftMargin": 40.0,
+                        "RightMargin": 40.0,
+                        "ActionTag": -1730762251,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 120.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 383535149,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -426360045,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 110.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 2,
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_3",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2733,
+                "PrePosition": {
+                  "X": 0.04,
+                  "Y": 0.6125
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "LeftMargin": 20.0,
+                "RightMargin": -20.0,
+                "TopMargin": 95.0,
+                "BottomMargin": 245.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2734,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "微信支付(仅安卓)",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2735,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.5,
+                          "Y": 1.0
+                        },
+                        "LeftMargin": 50.0,
+                        "RightMargin": 50.0,
+                        "ActionTag": 590063251,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 100.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 1882398758,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2736,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "打开更多游戏",
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2737,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.1667
+                        },
+                        "TopMargin": -5.0,
+                        "BottomMargin": -5.0,
+                        "ActionTag": 222897853,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 144.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 534465693,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -714806347,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 5.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 3,
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_4",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": 1136967572,
+            "Position": {
+              "X": 322.0,
+              "Y": 817.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 500.0,
+              "Y": 380.0
+            },
+            "FrameEvent": "",
+            "Name": "ListView_1",
+            "ctype": "ListViewObjectData"
+          },
+          {
+            "FontSize": 36,
+            "LabelText": "渠道相关",
+            "HorizontalAlignmentType": "HT_Center",
+            "VerticalAlignmentType": "VT_Center",
+            "Tag": 2738,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.4842
+            },
+            "PreSize": {
+              "X": 0.0,
+              "Y": 0.0
+            },
+            "LeftMargin": 248.0,
+            "RightMargin": 248.0,
+            "TopMargin": 568.0,
+            "BottomMargin": 532.0,
+            "ActionTag": 565375587,
+            "Position": {
+              "X": 320.0,
+              "Y": 550.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {
+              "R": 0,
+              "G": 0,
+              "B": 0
+            },
+            "Size": {
+              "X": 144.0,
+              "Y": 36.0
+            },
+            "FrameEvent": "",
+            "Name": "Title_0",
+            "ctype": "TextObjectData"
+          },
+          {
+            "ItemMargin": 45,
+            "DirectionType": "Vertical",
+            "VerticalType": 0,
+            "ScrollDirectionType": 0,
+            "BackColorAlpha": 102,
+            "ComboBoxIndex": 1,
+            "SingleColor": {},
+            "FirstColor": {
+              "R": 150,
+              "G": 150
+            },
+            "EndColor": {},
+            "ColorVector": {
+              "ScaleY": 1.0
+            },
+            "Scale9Width": 1,
+            "Scale9Height": 1,
+            "TouchEnable": true,
+            "Tag": 2739,
+            "PrePosition": {
+              "X": 0.5,
+              "Y": 0.2632
+            },
+            "PreSize": {
+              "X": 0.7813,
+              "Y": 0.3345
+            },
+            "LeftMargin": 70.0,
+            "RightMargin": 70.0,
+            "TopMargin": 647.0,
+            "BottomMargin": 109.0,
+            "Children": [
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2740,
+                "PrePosition": {
+                  "X": 0.0,
+                  "Y": 0.0
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "BottomMargin": 340.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2741,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "获取当前市场类型",
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2742,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.1667
+                        },
+                        "TopMargin": -5.0,
+                        "BottomMargin": -5.0,
+                        "ActionTag": 927129031,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 192.0,
+                          "Y": 24.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 1928273752,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2743,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "该市场是否支持退出",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2744,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.95,
+                          "Y": 1.0
+                        },
+                        "LeftMargin": 5.0,
+                        "RightMargin": 5.0,
+                        "ActionTag": 2144352995,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 190.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 282414245,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": 669434827,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 320.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_1",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2745,
+                "PrePosition": {
+                  "X": 0.02,
+                  "Y": 0.825
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "LeftMargin": 10.0,
+                "RightMargin": -10.0,
+                "TopMargin": 10.0,
+                "BottomMargin": 330.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2746,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "打开退出界面(仅安卓)",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2747,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.75,
+                          "Y": 1.0
+                        },
+                        "LeftMargin": 25.0,
+                        "RightMargin": 25.0,
+                        "ActionTag": -20907855,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 150.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -447139266,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  },
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2748,
+                    "PrePosition": {
+                      "X": 0.8,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "LeftMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "跳转应用商店的某个应用",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2749,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 1.0,
+                          "Y": 1.0
+                        },
+                        "ActionTag": 262372477,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 200.0,
+                          "Y": 60.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": -775890278,
+                    "Position": {
+                      "X": 400.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_2",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -271801405,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 215.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 1,
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_2",
+                "ctype": "PanelObjectData"
+              },
+              {
+                "BackColorAlpha": 102,
+                "ComboBoxIndex": 1,
+                "SingleColor": {},
+                "FirstColor": {
+                  "R": 150,
+                  "G": 200
+                },
+                "EndColor": {},
+                "ColorVector": {
+                  "ScaleY": 1.0
+                },
+                "Scale9Width": 1,
+                "Scale9Height": 1,
+                "TouchEnable": true,
+                "Tag": 2750,
+                "PrePosition": {
+                  "X": 0.02,
+                  "Y": 0.6375
+                },
+                "PreSize": {
+                  "X": 1.0,
+                  "Y": 0.15
+                },
+                "LeftMargin": 10.0,
+                "RightMargin": -10.0,
+                "TopMargin": 85.0,
+                "BottomMargin": 255.0,
+                "Children": [
+                  {
+                    "FontSize": 24,
+                    "ButtonText": "",
+                    "TextColor": {},
+                    "DisabledFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Disable.png"
+                    },
+                    "PressedFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Press.png"
+                    },
+                    "NormalFileData": {
+                      "Type": "Normal",
+                      "Path": "res/Button_Normal.png"
+                    },
+                    "Scale9Enable": true,
+                    "Scale9OriginX": 10,
+                    "Scale9OriginY": 10,
+                    "Scale9Width": 26,
+                    "Scale9Height": 16,
+                    "TouchEnable": true,
+                    "CallBackType": "Touch",
+                    "Tag": 2751,
+                    "PrePosition": {
+                      "X": 0.2,
+                      "Y": 0.5
+                    },
+                    "PreSize": {
+                      "X": 0.3125,
+                      "Y": 0.0528
+                    },
+                    "RightMargin": 300.0,
+                    "Children": [
+                      {
+                        "FontSize": 24,
+                        "LabelText": "跳转该应用的商店详情页",
+                        "IsCustomSize": true,
+                        "HorizontalAlignmentType": "HT_Center",
+                        "VerticalAlignmentType": "VT_Center",
+                        "Tag": 2752,
+                        "PrePosition": {
+                          "X": 0.5,
+                          "Y": 0.5
+                        },
+                        "PreSize": {
+                          "X": 0.95,
+                          "Y": 1.1667
+                        },
+                        "LeftMargin": 5.0,
+                        "RightMargin": 5.0,
+                        "TopMargin": -5.0,
+                        "BottomMargin": -5.0,
+                        "ActionTag": 1632319910,
+                        "Position": {
+                          "X": 100.0,
+                          "Y": 30.0
+                        },
+                        "Scale": {
+                          "ScaleX": 1.0,
+                          "ScaleY": 1.0
+                        },
+                        "AnchorPoint": {
+                          "ScaleX": 0.5,
+                          "ScaleY": 0.5
+                        },
+                        "CColor": {},
+                        "Size": {
+                          "X": 190.0,
+                          "Y": 70.0
+                        },
+                        "FrameEvent": "",
+                        "Name": "Text",
+                        "ctype": "TextObjectData"
+                      }
+                    ],
+                    "ActionTag": 704534103,
+                    "Position": {
+                      "X": 100.0,
+                      "Y": 30.0
+                    },
+                    "Scale": {
+                      "ScaleX": 1.0,
+                      "ScaleY": 1.0
+                    },
+                    "AnchorPoint": {
+                      "ScaleX": 0.5,
+                      "ScaleY": 0.5
+                    },
+                    "CColor": {},
+                    "Size": {
+                      "X": 200.0,
+                      "Y": 60.0
+                    },
+                    "FrameEvent": "",
+                    "Name": "Button_1",
+                    "ctype": "ButtonObjectData"
+                  }
+                ],
+                "ActionTag": -1462973108,
+                "Position": {
+                  "X": 0.0,
+                  "Y": 110.0
+                },
+                "Scale": {
+                  "ScaleX": 1.0,
+                  "ScaleY": 1.0
+                },
+                "ZOrder": 2,
+                "AnchorPoint": {},
+                "CColor": {},
+                "Size": {
+                  "X": 500.0,
+                  "Y": 60.0
+                },
+                "FrameEvent": "",
+                "Name": "Panel_3",
+                "ctype": "PanelObjectData"
+              }
+            ],
+            "ActionTag": -1829898956,
+            "Position": {
+              "X": 320.0,
+              "Y": 299.0
+            },
+            "Scale": {
+              "ScaleX": 1.0,
+              "ScaleY": 1.0
+            },
+            "AnchorPoint": {
+              "ScaleX": 0.5,
+              "ScaleY": 0.5
+            },
+            "CColor": {},
+            "Size": {
+              "X": 500.0,
+              "Y": 380.0
+            },
+            "FrameEvent": "",
+            "Name": "ListView_2",
+            "ctype": "ListViewObjectData"
+          }
+        ],
+        "Position": {
+          "X": 0.0,
+          "Y": 0.0
+        },
+        "Scale": {
+          "ScaleX": 1.0,
+          "ScaleY": 1.0
+        },
+        "AnchorPoint": {},
+        "CColor": {},
+        "Size": {
+          "X": 640.0,
+          "Y": 1136.0
+        },
+        "FrameEvent": "",
+        "Name": "Layer",
+        "ctype": "LayerObjectData"
+      },
+      "ctype": "GameProjectData"
+    }
+  }
+}
