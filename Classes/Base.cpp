@@ -53,11 +53,11 @@ void Base::btn2CallBack(Ref* pSender)
     bool ret = vigame::CoreManager::getInstance()->GetAuditSwitch();
     if (ret)
     {
-        cocos2d::log("Base 非审核状态");
+        cocos2d::log("not audit");
     }
     else
     {
-        cocos2d::log("Base 审核中");
+        cocos2d::log("auditting");
     }
 }
 

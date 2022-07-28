@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb">
+      <UniqueIdentifier>{396daebd-c32b-4733-a24f-265737c42711}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\ad">
+      <UniqueIdentifier>{dddf2df5-0e3f-4072-9984-c550f34c9e1c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\ad\platform">
+      <UniqueIdentifier>{0b718a99-25df-4551-a5de-76e14be77620}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\ad\interface">
+      <UniqueIdentifier>{8eb05712-f595-45a2-be9e-7a1b4b5ddcb4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\pay">
+      <UniqueIdentifier>{2b658c31-9d43-4547-aea7-4565a269625c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\pay\platform">
+      <UniqueIdentifier>{2373d737-63f0-4ffb-9da5-9c28da857781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\pay\interface">
+      <UniqueIdentifier>{573d0040-5bc8-4c84-8871-15692f2ba642}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\tj">
+      <UniqueIdentifier>{55394beb-b6a9-4d76-8b57-f6abd6760709}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\tj\interface">
+      <UniqueIdentifier>{bf82793c-2297-4835-87ae-44ac9324d346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\tj\platform">
+      <UniqueIdentifier>{72da11b4-3e47-4cd6-a2dd-613c9942d5e9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\core">
+      <UniqueIdentifier>{a7302ab2-28e9-40c2-9d4b-b10d8d8a1061}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\core\interface">
+      <UniqueIdentifier>{014f58ca-cf83-4c3b-8485-99fec30ceb02}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\core\platform">
+      <UniqueIdentifier>{f939c4e5-a4cc-4726-b616-0f475352775e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\utils">
+      <UniqueIdentifier>{68d01ff6-7825-482b-9bf5-f5b2763a9833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\social">
+      <UniqueIdentifier>{15853ee9-9be2-4845-a5a1-875ef361b170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\social\platform">
+      <UniqueIdentifier>{b99dc4c1-12bf-4b8e-93ff-6368742b630f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\wb\social\interface">
+      <UniqueIdentifier>{2d1116e0-8343-4a6a-b090-c85ed6574de5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AD.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Home.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MainScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\ad\ADManager.cpp">
+      <Filter>src\wb\ad</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\ad\platform\ADPc.cpp">
+      <Filter>src\wb\ad\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Pay.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\pay\PayManager.cpp">
+      <Filter>src\wb\pay</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\pay\platform\PayPc.cpp">
+      <Filter>src\wb\pay\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\tj\TjManager.cpp">
+      <Filter>src\wb\tj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\tj\platform\TjPc.cpp">
+      <Filter>src\wb\tj\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\core\CoreManager.cpp">
+      <Filter>src\wb\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\core\platform\CorePc.cpp">
+      <Filter>src\wb\core\platform</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\TJ.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Base.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Social.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\utils\Utils.cpp">
+      <Filter>src\wb\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\social\SocialManager.cpp">
+      <Filter>src\wb\social</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\wb\social\platform\SocialPc.cpp">
+      <Filter>src\wb\social\platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AD.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Home.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MainScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\wb.h">
+      <Filter>src\wb</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\ad\ADManager.h">
+      <Filter>src\wb\ad</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\ad\platform\ADPc.h">
+      <Filter>src\wb\ad\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\ad\interface\ADBase.h">
+      <Filter>src\wb\ad\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Pay.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\pay\PayManager.h">
+      <Filter>src\wb\pay</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\pay\platform\PayPc.h">
+      <Filter>src\wb\pay\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\pay\interface\PayBase.h">
+      <Filter>src\wb\pay\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\tj\TjManager.h">
+      <Filter>src\wb\tj</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\tj\interface\TjBase.h">
+      <Filter>src\wb\tj\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\tj\platform\TjPc.h">
+      <Filter>src\wb\tj\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\core\CoreManager.h">
+      <Filter>src\wb\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\core\interface\CoreBase.h">
+      <Filter>src\wb\core\interface</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\core\platform\CorePc.h">
+      <Filter>src\wb\core\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\TJ.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Base.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Social.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\utils\common.h">
+      <Filter>src\wb\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\utils\macros.h">
+      <Filter>src\wb\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\utils\Utils.h">
+      <Filter>src\wb\utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\social\SocialManager.h">
+      <Filter>src\wb\social</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\social\platform\SocialPc.h">
+      <Filter>src\wb\social\platform</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\wb\social\interface\SocialBase.h">
+      <Filter>src\wb\social\interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>

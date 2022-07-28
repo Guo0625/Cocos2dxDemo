@@ -4,3 +4,7 @@ proj.android-studio/.settings/
 proj.android-studio/app/.cxx/
 proj.android-studio/app/.idea/
 Classes/wb/.vscode/settings.json
+.vscode/settings.json
+proj.win32/Debug.win32/Ext.csb
+proj.win32/Debug.win32/
+proj.win32/.vs/
